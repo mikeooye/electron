@@ -1306,7 +1306,7 @@ Returns [`PrinterInfo[]`](structures/printer-info.md)
   * `header` String (optional) - String to be printed as page header.
   * `footer` String (optional) - String to be printed as page footer.
   * `pageSize` String | Size (optional) - Specify page size of the printed document. Can be `A3`,
-  `A4`, `A5`, `Legal`, `Letter`, `Tabloid` or an Object containing `height`.
+  `A4`, `A5`, `Legal`, `Letter`, `Tabloid`, `K8`, `K16` or an Object containing `height`.
 * `callback` Function (optional)
   * `success` Boolean - Indicates success of the print call.
   * `failureReason` String - Error description called back if the print fails.
@@ -1341,7 +1341,7 @@ win.webContents.print(options, (success, errorType) => {
     * `from` Number - Index of the first page to print (0-based).
     * `to` Number - Index of the last page to print (inclusive) (0-based).
   * `pageSize` String | Size (optional) - Specify page size of the generated PDF. Can be `A3`,
-  `A4`, `A5`, `Legal`, `Letter`, `Tabloid` or an Object containing `height` and `width` in microns.
+  `A4`, `A5`, `Legal`, `Letter`, `Tabloid`, `K8`, `K16` or an Object containing `height` and `width` in microns.
   * `printBackground` Boolean (optional) - Whether to print CSS backgrounds.
   * `printSelectionOnly` Boolean (optional) - Whether to print selection only.
 
